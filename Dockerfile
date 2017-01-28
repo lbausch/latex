@@ -23,4 +23,4 @@ RUN apt-get update && apt-get install biber python-pygments
 RUN apt-get update && apt-get install php-swiftmailer git inotify-tools
 
 # Add a user
-RUN adduser --disabled-password --gecos '' lb && echo "lb:lb" | chpasswd
+RUN adduser --disabled-password --gecos '' latex && echo "latex:latex" | chpasswd
