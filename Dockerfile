@@ -24,6 +24,3 @@ RUN apt-get update && apt-get install php-swiftmailer git inotify-tools
 
 # Add a user
 RUN adduser --disabled-password --gecos '' lb && echo "lb:lb" | chpasswd
-
-# Clean up
-RUN apt-get autoremove && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
