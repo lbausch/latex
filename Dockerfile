@@ -1,5 +1,5 @@
 # Use Debian Stretch to get a more recent version of KOMA-Script
-FROM debian:stretch
+FROM debian:buster
 
 # Set maintainer
 LABEL maintainer="Lorenz Bausch <info@lorenzbausch.de>"
